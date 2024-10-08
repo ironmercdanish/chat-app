@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Main Content Styles */
+main {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Entry Styles */
+.chat {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    transition: background-color 0.3s;
+}
+
+.chat:hover {
+    background-color: #f9f9f9;
+}
+
+/* Message Styles */
+.msg {
+    margin-left: 10px;
+    padding: 10px;
+    background: #f0f8ff;
+    border-left: 4px solid #007bff;
+}
+
+/* Button Styles */
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input and Textarea Styles */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Empty State Message */
+p {
+    font-size: 1.1em;
+    text-align: center; /* Center-aligning for better visibility */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%; /* Full width buttons on small screens */
+        margin: 5px 0; /* Margin for spacing */
+    }
+
+    .chat {
+        padding: 10px;
+    }
+}
+
+
+.chat-actions {
+    display: flex; /* Use flexbox for alignment */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
